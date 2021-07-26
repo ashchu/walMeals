@@ -232,13 +232,17 @@ I'm sure there's a better way, but I'm too smooth brain right now*/
 }
 
 .circlePink {
-    background-color: #FFDFDF;
+    /* background-color: #FFDFDF; */
     border-radius: 50%;
     /*display: inline-block;*/
     position: absolute;
     justify-content: flex-end;
     z-index: 0;
     overflow: hidden;
+}
+
+.circlePink img {
+  width: 80%
 }
 
 #pink1 {
@@ -271,7 +275,7 @@ I'm sure there's a better way, but I'm too smooth brain right now*/
 }
 
 .circlePurp {
-    background-color: #EBDFFF;
+    /* background-color: #EBDFFF; */
     border-radius: 50%;
     /*display: inline-block;*/
     position: absolute;
@@ -292,6 +296,10 @@ I'm sure there's a better way, but I'm too smooth brain right now*/
     left: -350px;
 }
 
+#purp1 img {
+  height: 70%;
+}
+
 #purple-spacer {
     position: relative;
     top: -50px;
@@ -302,12 +310,20 @@ I'm sure there's a better way, but I'm too smooth brain right now*/
 }
 
 .circleBlue {
-    background-color: #DFF0FF;
+    /* background-color: #DFF0FF; */
     border-radius: 50%;
     /*display: inline-block;*/
-    position: absolute;
+    position: relative;
     justify-content: flex-end;
     z-index: 0;
+}
+
+.circleBlue img{
+  overflow: hidden;
+  width: 80%;
+  position: absolute;
+  margin-top: -900px;
+  margin-left: -50px;
 }
 
 #blue1 {
@@ -461,19 +477,6 @@ I'm sure there's a better way, but I'm too smooth brain right now*/
     height: inherit;
 }
 
-#project {
-    margin-bottom: 24vh;
-
-}
-
-#project p {
-    font-size: 20px;
-}
-
-#project li {
-    font-size: 18px;
-}
-
 .text.projects {
     /* margin-left: 8vw; */
 }
@@ -533,7 +536,6 @@ ul {
 
 #secondTitle {
     font-weight: bold;
-    text-align: center;
     color: white;
     margin-bottom: 1em;
     width: 100%;
@@ -612,7 +614,7 @@ input[type="email"]::-webkit-input-placeholder {
 .typewriter p {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
+    border-right: .20em solid orange;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -620,7 +622,7 @@ input[type="email"]::-webkit-input-placeholder {
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
     /* Adjust as needed */
-    animation: typing 3s steps(35, end), blink-caret .75s step-end infinite;
+    animation: typing 3s steps(34, end), blink-caret .90s step-end infinite;
 }
 
 
@@ -631,7 +633,7 @@ input[type="email"]::-webkit-input-placeholder {
         width: 0
     }
     to {
-        width: 50%
+        width: 100%
     }
 }
 

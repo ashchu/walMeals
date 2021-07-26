@@ -1,12 +1,15 @@
 import React from "react";
 import MiniHeader from "./MiniHeader.js";
 import Timer from "./Timer.js";
+import dish2 from "./assets/images/circlefood2.PNG";
 
 function Try() {
     return(
 
         <div id="project" className="section">
-            <div className="circleBlue" id="blue1"></div>
+            <div className="circleBlue" id="blue1">
+              <img src={dish2} />
+            </div>
             <div id="info" className="text projects">
                 <MiniHeader title="try" class="mini-visit" />
                 <h2 id="secondTitle" className="headerTitle">You're Invited.</h2>

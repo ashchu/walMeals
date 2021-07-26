@@ -57,7 +57,7 @@ function Timer() {
       <div class="container" style={{marginTop: "2em"}}>
         <div class="row">
           <div class="card-deck">
-            {timerComponents.length ? timerComponents : <span>Time for Blastoff!</span>}
+            {timerComponents.length ? timerComponents : <span>Time for Lunch! Pre-order today!</span>}
           </div>
         </div>
         <div class="row">

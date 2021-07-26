@@ -269,7 +269,7 @@ strong {
 
 .mini-visit {
     position: relative;
-    margin-left: 45%;
+    /* margin-left: 45%; */
     margin-bottom: 1rem;
 }
 
@@ -312,4 +312,42 @@ h2 {
 
 .signup-section p {
     padding-top: 20px;
+}
+
+#ashley{
+  padding-top: 300px;
+}
+
+#ashley h1 {
+  font-weight: 800;
+  padding-top: 30px;
+}
+
+#ashley mini-ashley {
+  padding-left: 50%;
+}
+
+#ashleymission {
+  text-align: left;
+  margin-left: 10%;
+}
+
+#ashleyimg {
+  width: 40%;
+  height: auto;
+  position: relative;
+}
+
+.learn-card {
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.learn-card img {
+  position: relative;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
 }

@@ -17,12 +17,6 @@ function About() {
               By combining these two issues of 1. Accessibility to affordable nutricious food and 2. Grocery store food waste, we can combine them to produce the solutions customers want in their busy lives.
             </p>
         </div>
-        {/*
-        <div className="big puzzle below">
-            <img src={require("./assets/images/big_puzzle.png")} />
-        </div>
-        <img src={require("./assets/images/staticPhoto.png")} />
-        */}
     </div>
     );
 }

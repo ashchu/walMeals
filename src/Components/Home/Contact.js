@@ -1,5 +1,6 @@
 import React from "react";
 import MiniHeader from "./MiniHeader.js";
+import dish1 from "./assets/images/circlefood1.PNG"
 
 function Contact(){
     return (
@@ -10,7 +11,9 @@ function Contact(){
             <MiniHeader title="contact" class="mini-contact" />
 
             <h2 id="fifthTitle" className="headerTitle">Connect With Us.</h2>
-            <div className="circlePink" id="pink-bottom" />
+            <div className="circlePink" id="pink-bottom">
+              <img src={dish1} />
+            </div>
             <div className="socials">
                 <h3 style={{fontSize: "200%"}}>Follow along on our Instagram
                 @<strong><a href="https://www.instagram.com/walmart/" target="_blank" style={{textDecoration: "none", color: "inherit"}}>walmart</a></strong>

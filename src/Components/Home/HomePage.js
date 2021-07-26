@@ -8,6 +8,8 @@ import About from './About.js';
 import Try from './Try.js';
 import Learn from './Learn.js';
 import CircleSpacer from './CircleSpacer.js';
+import How from './How.js';
+import Ashley from './Ashley.js';
 import FAQ from './FAQ.js';
 import Contact from './Contact.js';
 import Footer from './Footer.js';
@@ -41,15 +43,17 @@ class HomePage extends React.Component {
 
                 <About />
 
+                <How />
+
                 <Try />
 
                 <Learn />
 
-                <CircleSpacer />
-
                 <FAQ />
 
                 <Contact />
+
+                <Ashley />
 
                 <section class="signup-section" id="signup">
                   <div class="container">

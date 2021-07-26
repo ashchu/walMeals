@@ -43,15 +43,16 @@ class Landing extends React.Component {
 
     return (
       <div id="topBarColor">
-        <div class="circleMint" id="mint1"></div>
         <div class="circlePink" id="pink1"></div>
-        <div class="circlePurp" id="purp1"></div>
+        <div class="circlePurp" id="purp1">
+          <img src="https://purepng.com/public/uploads/large/purepng.com-food-platefood-meat-plate-tasty-grill-breakfast-dinner-french-fries-launch-941524624270veqpm.png" />
+        </div>
         <div id="landing">
           <div id="border-box">
             <div id="title">
               <a href="https://walmart.com"><img id="walmartLogo" src={logo} alt="walmart-logo"/></a>
                 <div className="typewriter">
-                  <p id="landing-text" style={{textAlign: 'center'}} data-type='[]' data-period="2000">Preparing fresh kits for you today!</p>
+                  <p id="landing-text" style={{textAlign: 'center'}} data-type='[]' data-period="2500">Now offering fresh meal kits for any day!</p>
                 </div>
 
               {/* BLAST OFF BUTTON */}
