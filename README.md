@@ -1,4 +1,4 @@
-# inertia.nyc
+# WalMeal!
 WalMeal's website!
 
 ## Project Structure
