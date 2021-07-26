@@ -1,0 +1,663 @@
+/* ============================ */
+
+
+/* Styles used throughout page */
+
+
+/* ============================ */
+
+@font-face {
+    font-family: 'OpenMine';
+    src: url('../fonts/OpenMine.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.home-button,
+.white-button {
+    padding: 1.5vh 1vw;
+    text-decoration: none;
+    margin: 6vh 0.5vw;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.home-button {
+    color: white;
+    background: #6FCF97;
+}
+
+.home-button:hover {
+    background-color: #4DAB74;
+    text-decoration: none;
+    color: white;
+}
+
+.white-button {
+    color: #6FCF97;
+    background: #FFFFFF;
+    border: 1px solid #6FCF97;
+    box-sizing: border-box;
+}
+
+.white-button:hover {
+    background-color: rgb(240, 240, 240);
+    text-decoration: none;
+    color: #4DAB74;
+}
+
+.blast-off {
+    text-align: center;
+    line-height: 3rem;
+    justify-content: center;
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    background: transparent;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 1em 1em;
+}
+
+.blast-off-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* overflow: hidden; */
+    /*align-items: center;*/
+    margin: 8vh;
+}
+
+.text {
+    width: 80vw;
+}
+
+.text p {
+    margin-bottom: 4vh;
+    font-size: 3vh;
+}
+
+
+/* ============================ */
+
+
+/* Background Puzzle Pieces & People Images */
+
+
+/* ============================ */
+
+.person {
+    position: absolute;
+}
+
+.below {
+    z-index: 0;
+}
+
+.big img {
+    height: auto;
+    transform: rotate(30deg) translateX(-20%) translateY(-37%);
+    margin-left: 14vw;
+    opacity: 0.3;
+}
+
+.small img {
+    width: 8vw;
+    opacity: 0.5;
+    margin-left: 76vw;
+    transform: rotate(90deg) translateX(-40%);
+}
+
+.sitting img {
+    width: 20vw;
+    margin-left: 63vw;
+    transform: translate(5vw, -5vh);
+}
+
+.big2 img {
+    width: 20vw;
+    transform: rotate(10deg) translateX(70vw) translateY(70vh);
+    z-index: -2;
+    opacity: 0.6;
+}
+
+.big3 img {
+    width: 28vw;
+    transform: rotate(-20deg) translate(-60vw, 70vh);
+    margin-left: 44vw;
+    z-index: -3;
+    opacity: 0.3;
+}
+
+.standing img {
+    position: relative;
+    width: 7vw;
+    transform: translateY(100vh);
+    margin-left: 24vw;
+    z-index: 1;
+}
+
+.standing2 img {
+    position: relative;
+    width: 4vw;
+    transform: translateY(100vh) scaleX(-1);
+    margin-left: 42vw;
+    z-index: 1;
+}
+
+
+/* ============================ */
+
+
+/* Unique Styles */
+
+
+/* ============================ */
+
+{
+    /* USED */
+}
+
+#landing {
+    /* background: #0072CE; */
+    background-image: linear-gradient(#0072CE, #FFB81C);
+    width: 100vw;
+    height: 80vh;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Probably not going to use this */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#backimg {
+    position: absolute;
+    max-width: 100vw;
+    min-height: 100vh;
+    opacity: 0.1;
+}
+
+#border-box {
+    margin-top: -8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 6px solid white; */
+    padding: 8vh;
+    width: 80vw;
+    color: transparent;
+    z-index: 1;
+}
+
+
+/*I made classes for all the circle colors and IDS so you can manipulate eachone's position
+I'm sure there's a better way, but I'm too smooth brain right now*/
+
+.circleMint {
+    /*display: inline-block;*/
+    background-color: #DFFFF4;
+    position: absolute;
+    justify-content: flex-end;
+    z-index: 0;
+}
+
+#mint1 {
+    /*trying to figure out how to cut off random piece of circle without extending width of web page
+  border-radius: 250px 0px 250px 250px;
+  -moz-border-radius: 250px 0px 250px 250px;
+  -webkit-border-radius: 250px 0px 250px 250px;*/
+    top: 0px;
+    right: 0px;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 0 0 0 250px;
+    -moz-border-radius: 0 0 0 250px;
+    -webkit-border-radius: 0 0 0 250px;
+}
+
+.circlePink {
+    background-color: #FFDFDF;
+    border-radius: 50%;
+    /*display: inline-block;*/
+    position: absolute;
+    justify-content: flex-end;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#pink1 {
+    position: relative;
+    height: 12vw;
+    width: 12vw;
+    top: 135px;
+    left: 134px;
+}
+
+#pink-spacer {
+    position: relative;
+    top: 40px;
+    left: 200px;
+    height: 15vw;
+    width: 15vw;
+    /* 165 px */
+}
+
+#pink-bottom {
+    /* 400 px */
+    position: relative;
+    height: 28vw;
+    width: 28vw;
+    margin-top: -15vw;
+    margin-left: 85%;
+    border-radius: 0 0 0 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+.circlePurp {
+    background-color: #EBDFFF;
+    border-radius: 50%;
+    /*display: inline-block;*/
+    position: absolute;
+    justify-content: flex-end;
+    z-index: 0;
+}
+
+#purp1 {
+    /* 750 px */
+    height: 55vw;
+    width: 55vw;
+    /* These min don't seem to be affecting circle */
+    min-width: 20vw;
+    min-height: 20vw;
+    /* 0 800 800 0 */
+    border-radius: 0px 850px 850px 0;
+    top: 600px;
+    left: -350px;
+}
+
+#purple-spacer {
+    position: relative;
+    top: -50px;
+    right: -600px;
+    height: 24vw;
+    width: 24vw;
+    /* 360 px */
+}
+
+.circleBlue {
+    background-color: #DFF0FF;
+    border-radius: 50%;
+    /*display: inline-block;*/
+    position: absolute;
+    justify-content: flex-end;
+    z-index: 0;
+}
+
+#blue1 {
+    /* 600 px */
+    height: 50vw;
+    width: 25vw;
+    top: 1500px;
+    right: 0px;
+    /* 300 px */
+    border-radius: 350px 0 0 350px;
+    -moz-border-radius: 0 0 0 350px;
+    -webkit-border-radius: 350px 0 0 350px;
+}
+
+#walmartLogo,
+#register-contact {
+    z-index: 1;
+    transform: translateY(16px);
+}
+
+#walmartLogo {
+    position: relative;
+    height: 45vh;
+}
+
+
+/* for animation */
+
+#f {
+    left: -10px;
+    top: -5px;
+    position: absolute;
+    z-index: 3;
+    width: 38px;
+}
+
+#r {
+    right: 145px;
+    position: absolute;
+    z-index: 3;
+    width: 48px;
+}
+
+#i {
+    right: 50px;
+    top: -5px;
+    position: absolute;
+    z-index: 3;
+    width: 1%;
+}
+
+
+/* lettering */
+
+#walmartLogo {
+    max-width: 600px;
+    object-fit: contain;
+    z-index: 3;
+    margin-top: 10vh;
+}
+
+#register-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+#laptop-register {
+    text-align: center;
+    /* z-index: 2; */
+    /* margin-top: 3vh; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#laptop {
+    width: 600px;
+    position: absolute;
+}
+
+#register {
+    z-index: 3;
+    margin-top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 35px;
+    color: #559943;
+}
+
+#landing-text {
+    font-weight: 600;
+    width: fit-content;
+    text-transform: uppercase;
+    /* margin-top: 10vh; */
+    font-size: 3vh;
+    text-align: center;
+    color: rgba(247, 0, 133, 0.9);
+    text-shadow: 0px 2px 5px rgba(0,56,150, 0.82), 0px -2px 5px rgba(108,171,231, 0.6);
+    z-index: 2;
+}
+
+@keyframes float {
+    to {
+        transform: translate(8px, 6px);
+    }
+}
+
+@keyframes float2 {
+    to {
+        transform: translate(-8px, 6px);
+    }
+}
+
+@keyframes float3 {
+    to {
+        transform: translate(8px, -6px);
+    }
+}
+
+#about {
+    margin-bottom: 12vh;
+}
+
+#about img {
+    height: 46vh;
+    /* border-radius: 36px; */
+    margin-left: 10%;
+    z-index: 1;
+}
+
+#mission {
+    text-align: center;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+.carousel {
+    width: 25vw;
+    /* margin-right: 8%; */
+}
+
+.carousel-cell {
+    width: 25vw;
+    /* margin-right: 10px; */
+}
+
+.carousel-cell img {
+    width: 25vw;
+    height: inherit;
+}
+
+#project {
+    margin-bottom: 24vh;
+
+}
+
+#project p {
+    font-size: 20px;
+}
+
+#project li {
+    font-size: 18px;
+}
+
+.text.projects {
+    /* margin-left: 8vw; */
+}
+
+.bold-blue {
+    display: inline;
+    color: #003087;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.circles {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    #walmartLogo {
+        max-width: 80vw;
+    }
+    #register {
+        top: 40vh;
+        font-size: 20px;
+    }
+    .handRow img {
+        opacity: 30%;
+    }
+    #landing-text {
+        font-size: 14px;
+    }
+    #laptop {
+        width: 320px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+#headerFirst {
+  font-size: 90px;
+}
+
+#firstTitle {
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+#firstTitle:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 30%; /* Change this to whatever width you want. */
+    padding: 20px 0; /* This creates some space between the element and the border. */
+    margin-left: 35%;
+    border-bottom: 1px solid white; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#secondTitle {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#thirdTitle {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#fourthTitle {
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#fifthTitle {
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.stay-tuned {
+    width: 60%;
+    margin-top: 2em;
+}
+
+.socials {
+    width: 60%;
+    margin-top: -12vw;
+}
+
+.learn-card {
+    width: 1em;
+    height: 35vw;
+    margin: 0 2vw;
+    flex-grow: 1;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.learn-card-container {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-container {
+    padding: 7px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.styled-form {
+    color: white !important;
+    font-weight: bold;
+    font-size: 2vw !important;
+    background-color: transparent !important;
+    border: transparent !important;
+    padding: 5px 10px 5px 30px !important;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color:white;
+    opacity:1;
+}
+
+.typewriter p {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3s steps(35, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 50%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+
+.homeFooter {
+    height: 200px;
+    overflow: hidden;
+    background-color: #003087;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+}
+
+.foot {}

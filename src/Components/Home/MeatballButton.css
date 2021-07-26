@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'OpenMine';
+    src: url('./assets/fonts/OpenMine.ttf') format('truetype');
+}
+
+
+.nav-item * {
+    position: relative;
+    line-height: 5rem;
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-family: 'OpenMine', sans-serif;
+    color: white;
+}
+.nav-item:hover * {
+    cursor: pointer;
+    background-image: linear-gradient(to right, transparent, rgba(0,114,206, 0.5), transparent);
+}
+
+#pink-small {
+    height: 60px;
+    width: 60px;
+    top: 135px;
+    left: 200px;
+}
+
+#pink-mini {
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    right:100px;
+}
+
+#blue-medium {
+    height: 135px;
+    width: 135px;
+    top: 150px;
+    left: 500px;
+}

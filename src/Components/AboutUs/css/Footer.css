@@ -1,0 +1,35 @@
+.Footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-align: none;
+}
+
+a:hover {
+  color: black;
+
+}
+
+.Footer img {
+  font-size: 20px;
+  height: 7vh;
+  margin: 30px 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .Footer img {
+    margin: 10px 5vw;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .Footer img {
+    height: 3vw;
+  }
+}
