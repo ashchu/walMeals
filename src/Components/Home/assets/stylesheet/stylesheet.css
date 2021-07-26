@@ -344,6 +344,10 @@ h2 {
   text-transform: uppercase;
 }
 
+/* .lean-card :active{
+  box-shadow: 5px 10px black;
+} */
+
 .learn-card img {
   position: relative;
   display: block;
