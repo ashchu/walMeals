@@ -6,6 +6,7 @@ function LearnCard(props){
           <h4>{props.name}</h4>
           <h7>{props.desc}</h7>
           <img src={props.img} />
+          <p>{props.details}</p>
         </div>
     );
 

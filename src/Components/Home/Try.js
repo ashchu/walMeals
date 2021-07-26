@@ -15,7 +15,8 @@ function Try() {
                 <h2 id="secondTitle" className="headerTitle">You're Invited.</h2>
                 <div className="location">
                     <h3 style={{fontSize: "250%"}}>We're launching in...
-                    <br></br></h3>
+                    <br></br>
+                    </h3>
                 </div>
 
                 {/* Timer */}

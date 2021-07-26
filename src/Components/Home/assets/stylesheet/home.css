@@ -591,6 +591,12 @@ ul {
     justify-content: space-evenly;
 }
 
+.learn-card p {
+  text-transform: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
 .form-container {
     padding: 7px;
     border-radius: 30px;
